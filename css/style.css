@@ -1,0 +1,21 @@
+body.dark {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+body.light {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+}
+
+input.dark {
+    background-color: #333333; /* Fondo del input oscuro */
+    color: #ffffff; /* Texto blanco en el input */
+    border: 1px solid #444444; /* Borde del input oscuro */
+}
+/* Estilos para inputs en modo claro */
+input.light {
+    background-color: #f0f0f0; /* Fondo del input claro */
+    color: #000000; /* Texto negro en el input */
+    border: 1px solid #cccccc; /* Borde del input claro */
+}
