@@ -1,16 +1,12 @@
 <?php
 // Validar si se enviaron los datos
-if (isset($_POST['añoInicio']) && isset($_POST['añoTermino'])) {
-    $añoInicio = intval($_POST['añoInicio']);
-    $añoTermino = intval($_POST['añoTermino']);
-    
-    $anios = [];
+if (isset($_POST['anioInicio']) && isset($_POST['anioTermino'])) {
+    $anioInicio = intval($_POST['anioInicio']);
+    $anioTermino = intval($_POST['anioTermino']);
+
     $bisiestos = [];
 
-    for ($i = $añoInicio; $i <= $añoTermino; $i++) {
-        // Agregar todos los años a un arreglo.
-        $anios[] = $i;
-
+    for ($i = $anioInicio; $i <= $anioTermino; $i++) {
         // Solo agarra los últimos 2 dígitos.
         $ultimosDigitos = $i % 100;
 

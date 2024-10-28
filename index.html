@@ -10,13 +10,16 @@
 </head>
 <body>
     <div class="m-auto w-200 text-center">
-        <h1>CALCULAR RANGO AÑOS BISIESTOS</h1>
+        <strong>CALCULAR RANGO DE AÑOS BISIESTOS</strong>
         <h3>Ingresa año de Inicio</h3>
-        <input type="number" name="añoInicio" id="añoInicio" min="0" max="9999" required>
+        <input type="number" name="añoInicio" id="anioInicio" min="0" max="9999" required>
         <h3>Ingresa año de Terminación</h3>
-        <input type="number" name="añoTermino" id="añoTermino" min="0" max="9999" required>
+        <input type="number" name="añoTermino" id="anioTermino" min="0" max="9999" required>
         <br>
-        <button class="w-40 h-9 rounded-xl bg-cyan-900 text-slate-300 mt-4" onclick="calculo()">Calcular</button>
+        <button class="w-40 h-9 rounded-xl bg-cyan-900 text-slate-300 my-4" onclick="calculo()">Calcular</button>
+        
+        <!-- Contenedor para los resultados -->
+        <div id="resultados" class="mt-4"></div>
     </div>
 </body>
 </html>
