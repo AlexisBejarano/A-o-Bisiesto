@@ -4,12 +4,12 @@ if (isset($_POST['añoInicio']) && isset($_POST['añoTermino'])) {
     $añoInicio = intval($_POST['añoInicio']);
     $añoTermino = intval($_POST['añoTermino']);
     
-    $años = [];
+    $anios = [];
     $bisiestos = [];
 
     for ($i = $añoInicio; $i <= $añoTermino; $i++) {
         // Agregar todos los años a un arreglo.
-        $años[] = $i;
+        $anios[] = $i;
 
         // Solo agarra los últimos 2 dígitos.
         $ultimosDigitos = $i % 100;
