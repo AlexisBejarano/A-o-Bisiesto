@@ -14,19 +14,22 @@ if (isset($_POST['añoInicio']) && isset($_POST['añoTermino'])) {
         // Solo agarra los últimos 2 dígitos.
         $ultimosDigitos = $i % 100;
 
-       // Verificar si el año es bisiesto
+        // Verificar si el año es bisiesto
         if ($ultimosDigitos === 0) {
             // Año termina en 00, debe ser divisible por 400
             if ($i % 400 === 0) {
-                $bisiestos[] = $i; // Agregar el año bisiesto al array
+                $bisiestos[] = "<strong>$i</strong>"; // Agregar el año bisiesto al array con asterisco y en negrita
+            } else {
+                $bisiestos[] = $i; // Agregar el año normal al array
             }
         } else {
             // Año no termina en 00, debe ser divisible por 4 y no por 100
             if ($i % 4 === 0 && $i % 100 !== 0) {
-                $bisiestos[] = $i; // Agregar el año bisiesto al array
+                $bisiestos[] = "<strong>$i</strong>"; // Agregar el año bisiesto al array con asterisco y en negrita
+            } else {
+                $bisiestos[] = $i; // Agregar el año normal al array
             }
         }
-
     }
 
     // Devolver resultado como JSON
@@ -47,5 +50,3 @@ if (isset($_POST['añoInicio']) && isset($_POST['añoTermino'])) {
 
 // incrementar el año inicial +1.*/
 ?>
-
-
